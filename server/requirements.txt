@@ -1,0 +1,14 @@
+langchain_groq 
+langchain_google_genai
+langchain
+langchain_core
+langchain_community
+sqlalchemy
+fastapi
+pydantic
+requests
+uvicorn
+pypdf
+faiss-cpu
+fastapi[standard]
+six
