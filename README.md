@@ -6,7 +6,7 @@ This application allows users to upload a PDF document,  ask questions about the
 
 1. [Technologies](#technologies)
 2. [Features](#features)
-3. [Getting Started](#configuration)
+3. [Getting Started](#getting_started)
 
 
 ## Technologies
