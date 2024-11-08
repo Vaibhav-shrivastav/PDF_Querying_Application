@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 8000
 
 # Command to run FastAPI using 'fastapi run'
-CMD ["fastapi", "run", "app:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["fastapi", "run", "app.py", "--host", "0.0.0.0", "--port", "8000"]

@@ -36,7 +36,7 @@ export const PDFProvider: React.FC<{ children: React.ReactNode }> = ({
     try {
       setIsLoading(true);
       const response = await axios.post(
-        "http://localhost:8000/upload_pdf/",
+        "http://backend:8000/upload_pdf/",
         formData,
         {
           headers: { "Content-Type": "multipart/form-data" },
@@ -65,7 +65,7 @@ export const PDFProvider: React.FC<{ children: React.ReactNode }> = ({
     setConvos((prevConvos) => [...prevConvos, { question, response: "" }]); 
 
     try {
-      const response = await axios.post("http://localhost:8000/ask_question/", {
+      const response = await axios.post("http://backend:8000/ask_question/", {
         question,
         document_id: documentId,
       });
