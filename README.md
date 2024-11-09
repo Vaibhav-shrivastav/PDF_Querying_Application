@@ -24,6 +24,7 @@ This application allows users to upload a PDF document,  ask questions about the
 - **Question-Answering**: Type a question to retrieve an answer based on the content of the uploaded document.Real-Time Responses
 - **Real-Time Responses**: Users get visual feedback during PDF upload, question processing, and answer generation.
 - **Conversation History**: The app stores the questions and answers in a conversation history for reference.
+![User Interface](./client/src/media/Readme/LandingPage.png)
 
 ## Getting Started
 Follow these instructions to set up and run the project on your local machine.
@@ -45,6 +46,7 @@ Follow these instructions to set up and run the project on your local machine.
    cd PDF_Querying_Application/server
    ```
 2. **Create `.env` file**:
+    - Kindly create `.env` file inside `server` directory.
     ```bash
     GOOGLE_API_KEY="your_api_key"
     GROQ_API_KEY="your_api_key"
@@ -57,21 +59,21 @@ Follow these instructions to set up and run the project on your local machine.
             - Open this [link](https://aistudio.google.com/apikey) and `Create API Key`
     - Copy your API keys and paste them in `.env` file as per the structure above.
 
-3. **Create Virtual Environment(if necessary)**:
-    - For Windows
-        ```bash
-        pip install virtualenv
-        python -m venv ./venv
-        venv\Scripts\activate
-        ```
-4. **Install Dependencies**:
-    ```bash
-        pip install -r requirements.txt
-    ```
+<!--3. **Create Virtual Environment(if necessary)**:-->
+<!--    - For Windows-->
+<!--        ```bash-->
+<!--        pip install virtualenv-->
+<!--        python -m venv ./venv-->
+<!--        venv\Scripts\activate-->
+<!--        ```-->
+<!--4. **Install Dependencies**:-->
+<!--    ```bash-->
+<!--        pip install -r requirements.txt-->
+<!--    ```-->
 
 #### Run Docker-Compose
 
-1. **Go to root directory(PDF_Querying_Application) where `docker-compose.yaml` file is located**
+1. **Go to root directory(PDF_Querying_Application) where `docker-compose.yml` file is located**
     ```bash
         cd ..
         docker-compose up --build
